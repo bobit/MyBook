@@ -7,6 +7,7 @@ abbrlink: 6a130ff3
 date: 2017-11-13 22:18:17
 categories:
 - Source
+typora-copy-images-to: ../../../gitbooks/static/images/6a130ff3
 ---
 
 ## 为什么要阅读源码
@@ -23,7 +24,7 @@ Spring运用的设计模式
 
 ## Spring框架
 
-![img](Spring5源码阅读-Spring/7445574-6c604b7559a79729.webp)
+![img](../../../gitbooks/static/images/6a130ff3/7445574-6c604b7559a79729.webp)
 
 Spring 是一个开源框架，是为了解决企业应用程序开发复杂性而创建的。
 框架的主要优势之一就是其分层架构，分层架构允许您选择使用哪一个组件，

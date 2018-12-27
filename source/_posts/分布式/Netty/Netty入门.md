@@ -8,6 +8,7 @@ categories:
 toc: true
 abbrlink: 21d654b6
 date: 2017-12-13 22:29:17
+typora-copy-images-to: ../../../../gitbooks/static/images/21d654b6
 ---
 ## 简介
 
@@ -87,7 +88,7 @@ Channel 为Netty 网络操作抽象类，EventLoop 主要是为Channel 处理 I/
 
 下图是Channel、EventLoop、Thread、EventLoopGroup之间的关系（摘自《Netty In Action》）：
 
-![img](Netty入门/616953-20170509162546738-1955835364.png)
+![img](../../../../gitbooks/static/images/21d654b6/616953-20170509162546738-1955835364.png)
 
 - 一个 EventLoopGroup 包含一个或多个 EventLoop。
 - 一个 EventLoop 在它的生命周期内只能与一个Thread绑定。
