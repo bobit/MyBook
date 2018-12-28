@@ -1,3 +1,11 @@
+### Temp ###
+_config.yml
+
+### gitbooks ###
+source/gitbooks/_book
+source/gitbooks/_posts
+source/gitbooks/*.pdf
+
 *.iml
 .idea
 
