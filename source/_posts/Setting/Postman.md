@@ -6,6 +6,7 @@ categories:
   - Tools
 toc: true
 abbrlink: 7bfeb391
+typora-copy-images-to: ../../../gitbooks/static/images/abbrlink
 date: 2015-11-13 11:16:35
 ---
 

@@ -3,8 +3,8 @@ title: MongoDB 学习总结
 tags:
   - MongoDB
   - Robo 3T
-categories: 
-- 分布式
+categories:
+  - 分布式
 toc: true
 abbrlink: '33388948'
 date: 2017-11-13 12:19:17

@@ -7,6 +7,7 @@ categories:
 toc: true
 abbrlink: '21924951'
 date: 2015-11-13 11:11:35
+typora-copy-images-to: ../../gitbooks/static/images/21924951
 ---
 
 ## Gradle 

@@ -6,6 +6,7 @@ categories:
   - Tools
 toc: true
 mathjax: true
+typora-copy-images-to: ../../../gitbooks/static/images/79274bb6
 abbrlink: 79274bb6
 date: 2015-11-13 11:14:35
 ---

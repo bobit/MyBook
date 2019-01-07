@@ -3,8 +3,8 @@ title: MQ学习总结
 tags:
   - MQ
   - ActiveMQ
-categories: 
-- 分布式
+categories:
+  - 分布式
 toc: true
 abbrlink: 2da7d583
 date: 2016-11-13 11:38:35

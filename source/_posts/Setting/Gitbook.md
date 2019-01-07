@@ -6,6 +6,7 @@ categories:
   - Tools
 toc: true
 abbrlink: 338d75c8
+typora-copy-images-to: ../../../gitbooks/static/images/338d75c8
 ---
 
 ## Gitbook

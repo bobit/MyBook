@@ -2,8 +2,8 @@
 title: Redis学习总结
 tags:
   - Redis
-categories: 
-- 分布式
+categories:
+  - 分布式
 toc: true
 abbrlink: 276848db
 date: 2016-12-13 22:09:17
