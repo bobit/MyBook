@@ -311,7 +311,7 @@ kubeadm init  --kubernetes-version=1.13.1  --pod-network-cidr=10.244.0.0/16 --ap
 看到以下信息表示安装成功
 
 ```
-[root@k8s-master vagrant]# kubeadm init  --kubernetes-version=1.13.1  --pod-network-cidr=10.244.0.0/16
+[root@k8s-master ~]# kubeadm init  --kubernetes-version=1.13.1  --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=192.168.33.200 --token-ttl 0
 [init] Using Kubernetes version: v1.13.1
 [preflight] Running pre-flight checks
         [WARNING SystemVerification]: this Docker version is not on the list of validated versions: 18.03.1-ce. Latest validated version: 18.06
@@ -324,90 +324,17 @@ kubeadm init  --kubernetes-version=1.13.1  --pod-network-cidr=10.244.0.0/16 --ap
 [certs] Using certificateDir folder "/etc/kubernetes/pki"
 [certs] Generating "etcd/ca" certificate and key
 [certs] Generating "etcd/server" certificate and key
-[certs] etcd/server serving cert is signed for DNS names [k8s-master localhost] and IPs [10.0.2.15 127.0.0.1 ::1]
+[certs] etcd/server serving cert is signed for DNS names [k8s-master localhost] and IPs [192.168.33.200 127.0.0.1 ::1]
 [certs] Generating "etcd/peer" certificate and key
-[certs] etcd/peer serving cert is signed for DNS names [k8s-master localhost] and IPs [10.0.2.15 127.0.0.1 ::1]
+[certs] etcd/peer serving cert is signed for DNS names [k8s-master localhost] and IPs [192.168.33.200 127.0.0.1 ::1]
 [certs] Generating "etcd/healthcheck-client" certificate and key
 [certs] Generating "apiserver-etcd-client" certificate and key
-[certs] Generating "ca" certificate and key
-[certs] Generating "apiserver" certificate and key
-[certs] apiserver serving cert is signed for DNS names [k8s-master kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 10.0.2.15]
-[certs] Generating "apiserver-kubelet-client" certificate and key
-[certs] Generating "front-proxy-ca" certificate and key
-[certs] Generating "front-proxy-client" certificate and key
-[certs] Generating "sa" key and public key
-[kubeconfig] Using kubeconfig folder "/etc/kubernetes"
-[kubeconfig] Writing "admin.conf" kubeconfig file
-[kubeconfig] Writing "kubelet.conf" kubeconfig file
-[kubeconfig] Writing "controller-manager.conf" kubeconfig file
-[kubeconfig] Writing "scheduler.conf" kubeconfig file
-[control-plane] Using manifest folder "/etc/kubernetes/manifests"
-[control-plane] Creating static Pod manifest for "kube-apiserver"
-[control-plane] Creating static Pod manifest for "kube-controller-manager"
-[control-plane] Creating static Pod manifest for "kube-scheduler"
-[etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
-[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
-[apiclient] All control plane components are healthy after 37.505570 seconds
-[uploadconfig] storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
-[kubelet] Creating a ConfigMap "kubelet-config-1.13" in namespace kube-system with the configuration for the kubelets in the cluster
-[patchnode] Uploading the CRI Socket information "/var/run/dockershim.sock" to the Node API object "k8s-master" as an annotation
-[mark-control-plane] Marking the node k8s-master as control-plane by adding the label "node-role.kubernetes.io/master=''"
-[mark-control-plane] Marking the node k8s-master as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[kubelet-check] Initial timeout of 40s passed.
-[bootstrap-token] Using token: hbttk1.z0zlwwwd247ib9z0
-[bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
-[bootstraptoken] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
-[bootstraptoken] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
-[bootstraptoken] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
-[bootstraptoken] creating the "cluster-info" ConfigMap in the "kube-public" namespace
-[addons] Applied essential addon: CoreDNS
-[addons] Applied essential addon: kube-proxy
-
-Your Kubernetes master has initialized successfully!
-
-To start using your cluster, you need to run the following as a regular user:
-
-  mkdir -p $HOME/.kube
-  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-  sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
-You should now deploy a pod network to the cluster.
-Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
-  https://kubernetes.io/docs/concepts/cluster-administration/addons/
-
-You can now join any number of machines by running the following on each node
-as root:
-
-  kubeadm join 10.0.2.15:6443 --token hbttk1.z0zlwwwd247ib9z0 --discovery-token-ca-cert-hash sha256:cacfcd88215536a8e1917cd5b6c32a17cbcf438a88c0dfec5d7c0eecfb5561db
-
-[root@k8s-master vagrant]# 
-```
-
-```
-[root@k8s-master vagrant]# kubeadm init  --kubernetes-version=1.13.1  --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=192.168.33.200 --token-ttl 0
-[init] Using Kubernetes version: v1.13.1
-[preflight] Running pre-flight checks
-        [WARNING SystemVerification]: this Docker version is not on the list of validated versions: 18.03.1-ce. Latest validated version: 18.06
-[preflight] Pulling images required for setting up a Kubernetes cluster
-[preflight] This might take a minute or two, depending on the speed of your internet connection
-[preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
-[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
-[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
-[kubelet-start] Activating the kubelet service
-[certs] Using certificateDir folder "/etc/kubernetes/pki"
 [certs] Generating "ca" certificate and key
 [certs] Generating "apiserver-kubelet-client" certificate and key
 [certs] Generating "apiserver" certificate and key
 [certs] apiserver serving cert is signed for DNS names [k8s-master kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 192.168.33.200]
 [certs] Generating "front-proxy-ca" certificate and key
 [certs] Generating "front-proxy-client" certificate and key
-[certs] Generating "etcd/ca" certificate and key
-[certs] Generating "etcd/server" certificate and key
-[certs] etcd/server serving cert is signed for DNS names [k8s-master localhost] and IPs [192.168.33.200 127.0.0.1 ::1]
-[certs] Generating "etcd/healthcheck-client" certificate and key
-[certs] Generating "etcd/peer" certificate and key
-[certs] etcd/peer serving cert is signed for DNS names [k8s-master localhost] and IPs [192.168.33.200 127.0.0.1 ::1]
-[certs] Generating "apiserver-etcd-client" certificate and key
 [certs] Generating "sa" key and public key
 [kubeconfig] Using kubeconfig folder "/etc/kubernetes"
 [kubeconfig] Writing "admin.conf" kubeconfig file
@@ -420,13 +347,13 @@ as root:
 [control-plane] Creating static Pod manifest for "kube-scheduler"
 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
-[apiclient] All control plane components are healthy after 28.503287 seconds
+[apiclient] All control plane components are healthy after 31.505570 seconds
 [uploadconfig] storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
 [kubelet] Creating a ConfigMap "kubelet-config-1.13" in namespace kube-system with the configuration for the kubelets in the cluster
 [patchnode] Uploading the CRI Socket information "/var/run/dockershim.sock" to the Node API object "k8s-master" as an annotation
 [mark-control-plane] Marking the node k8s-master as control-plane by adding the label "node-role.kubernetes.io/master=''"
 [mark-control-plane] Marking the node k8s-master as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: 69tw82.twy8rr5r5zgl78c5
+[bootstrap-token] Using token: tgta1g.5y0yp831gmwll3ax
 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
 [bootstraptoken] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
 [bootstraptoken] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
@@ -447,12 +374,11 @@ You should now deploy a pod network to the cluster.
 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
   https://kubernetes.io/docs/concepts/cluster-administration/addons/
 
-You can now join any number of machines by running the following on each node
-as root:
+You can now join any number of machines by
+```
 
-  kubeadm join 192.168.33.200:6443 --token 69tw82.twy8rr5r5zgl78c5 --discovery-token-ca-cert-hash sha256:baf8aa1450c36d8e851f6f232de9a0b7ff43e60fe059cab57be53b222d2d9a97
+```
 
-[root@k8s-master vagrant]# 
 ```
 
 
@@ -483,7 +409,7 @@ k8s-master   NotReady   master   3m39s   v1.12.3
 
 发现是NotReady状态，这是因为cni 网络插件没有安装的原因
 
-###  安装 cni 网络插件。
+###  安装 cni 网络插件
 
 ```
 docker pull quay.io/coreos/flannel:v0.10.0-amd64 
@@ -493,36 +419,31 @@ vi /etc/cni/net.d/10-flannel.conf
 
 mkdir /usr/share/oci-umount/oci-umount.d -p
 mkdir /run/flannel/
-kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.9.1/Documentation/kube-flannel.yml
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.10.0/Documentation/kube-flannel.yml
 ```
 
 查看系统pod运行状态
 
 ```
-[root@k8s-master ~]# kubectl get pods -n kube-system
-NAME                                 READY   STATUS    RESTARTS   AGE
-coredns-576cbf47c7-cpd4t             1/1     Running   1          4m22s
-coredns-576cbf47c7-m46n6             1/1     Running   1          4m22s
-etcd-k8s-master                      1/1     Running   0          3m45s
-kube-apiserver-k8s-master            1/1     Running   0          3m23s
-kube-controller-manager-k8s-master   1/1     Running   0          3m37s
-kube-flannel-ds-bzql2                1/1     Running   0          2m7s
-kube-proxy-7t97x                     1/1     Running   0          4m22s
-kube-scheduler-k8s-master            1/1     Running   0          3m32s
-
-之前是
-[root@k8s-master kubernetes]# kubectl get nodes
-NAME         STATUS     ROLES    AGE   VERSION
-k8s-master   NotReady   master   55m   v1.13.1
-[root@k8s-master kubernetes]# kubectl get pods -n kube-system
-NAME                                 READY   STATUS    RESTARTS   AGE
-coredns-86c58d9df4-447g6             0/1     Pending   0          55m
-coredns-86c58d9df4-66jdz             0/1     Pending   0          55m
-etcd-k8s-master                      1/1     Running   0          55m
-kube-apiserver-k8s-master            1/1     Running   0          55m
-kube-controller-manager-k8s-master   1/1     Running   0          55m
-kube-proxy-d75bc                     1/1     Running   0          55m
-kube-scheduler-k8s-master            1/1     Running   0          55m
+[root@k8s-master flannel]# kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.10.0/Documentation/kube-flannel.yml
+clusterrole.rbac.authorization.k8s.io/flannel created
+clusterrolebinding.rbac.authorization.k8s.io/flannel created
+serviceaccount/flannel created
+configmap/kube-flannel-cfg created
+daemonset.extensions/kube-flannel-ds created
+[root@k8s-master flannel]# kubectl get nodes
+NAME         STATUS   ROLES    AGE   VERSION
+k8s-master   Ready    master   13m   v1.13.1
+[root@k8s-master flannel]# kubectl get pod -n kube-system -o wide 
+NAME                                 READY   STATUS    RESTARTS   AGE     IP           NODE         NOMINATED NODE   READINESS GATES
+coredns-86c58d9df4-qzf4q             1/1     Running   0          13m     10.244.0.2   k8s-master   <none>           <none>
+coredns-86c58d9df4-smqrd             1/1     Running   0          13m     10.244.0.3   k8s-master   <none>           <none>
+etcd-k8s-master                      1/1     Running   0          12m     10.0.2.15    k8s-master   <none>           <none>
+kube-apiserver-k8s-master            1/1     Running   0          12m     10.0.2.15    k8s-master   <none>           <none>
+kube-controller-manager-k8s-master   1/1     Running   3          12m     10.0.2.15    k8s-master   <none>           <none>
+kube-flannel-ds-26xgw                1/1     Running   0          2m52s   10.0.2.15    k8s-master   <none>           <none>
+kube-proxy-5hwx8                     1/1     Running   0          13m     10.0.2.15    k8s-master   <none>           <none>
+kube-scheduler-k8s-master            1/1     Running   3          12m     10.0.2.15    k8s-master   <none>           <none>
 ```
 
 可以看到所有pod都处于Running表示运行成功
@@ -595,7 +516,25 @@ vmnode3   Ready     <none>    9h        v1.8.4
 
 /etc/kubernetes/admin.conf这个文件主要是集群初始化的时候用来传递参数的
 
+### reason:NetworkPluginNotReady 
 
+Jan 09 03:58:02 k8s-master kubelet[3491]: W0109 03:58:02.111099    3491 cni.go:203] Unable to update cni config: No networks found in /etc/cni/net.d
+Jan 09 03:58:02 k8s-master kubelet[3491]: E0109 03:58:02.112150    3491 kubelet.go:2192] Container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized
+
+### 安装 cni 网络插件
+
+```
+docker pull quay.io/coreos/flannel:v0.10.0-amd64 
+mkdir -p /etc/cni/net.d/
+vi /etc/cni/net.d/10-flannel.conf
+{"name":"cbr0","type":"flannel","delegate": {"isDefaultGateway": true}}
+
+mkdir /usr/share/oci-umount/oci-umount.d -p
+mkdir /run/flannel/
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.10.0/Documentation/kube-flannel.yml
+```
+
+查看系统pod运行状态
 
 ### [root@k8snode1 kubernetes]# kubectl get pod
 
