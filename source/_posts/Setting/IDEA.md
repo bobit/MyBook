@@ -1,13 +1,13 @@
 ---
 title: IDEA使用方法详解
+toc: true
+typora-copy-images-to: ../../../gitbooks/static/images/5dcde84c
+abbrlink: 5dcde84c
+date: 2015-11-12 11:15:35
 tags:
   - IDEA
 categories:
   - Tools
-toc: true
-abbrlink: 5dcde84c
-typora-copy-images-to: ../../../gitbooks/static/images/5dcde84c
-date: 2015-11-12 11:15:35
 ---
 
 ## IntelliJ IDEA import and reimport a project
