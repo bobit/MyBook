@@ -1,11 +1,12 @@
 ---
 title: Docker容器镜像删除
-tags: docker
-categories: 
-- Docker
 toc: true
 abbrlink: ce026f5a
 date: 2017-11-13 22:21:17
+tags:
+- Docker
+categories:
+- DevOps
 ---
 
 1.停止所有的container，这样才能够删除其中的images：

@@ -1,13 +1,13 @@
 ---
 title: Windows10使用Minikube安装Kubernetes
-tags:
-  - k8s
-categories:
-  - 分布式
 toc: true
 typora-copy-images-to: ../../gitbooks/static/images/2ff1c2e3
 abbrlink: 2ff1c2e3
 date: 2019-01-05 16:50:05
+tags:
+  - k8s
+categories:
+  - DevOps
 ---
 
 在Windows上学习Docker和Kubernetes，这里使用Minikube安装Kubernetes，minikube是一个运行Docker和Kubernetes的VM。它通常是用来单独运行Kubernetes的，但是你也可以用它来跑Docker容器。

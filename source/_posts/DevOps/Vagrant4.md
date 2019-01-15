@@ -5,7 +5,9 @@ typora-copy-images-to: ../../gitbooks/static/images/e67dd03f
 abbrlink: e67dd03f
 date: 2018-12-30 19:56:36
 tags:
+- Minikube
 categories:
+- DevOps
 ---
 
 ## 实验环境

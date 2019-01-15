@@ -1,11 +1,13 @@
 ---
-title: Docker4
+title: Docker for windows 使用
 toc: true
 typora-copy-images-to: ../../gitbooks/static/images/949ea80e
 abbrlink: 949ea80e
 date: 2018-12-30 22:01:44
 tags:
+- Docker
 categories:
+- DevOps
 ---
 
 ## docker for windows修改虚拟机路径

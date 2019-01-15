@@ -1,6 +1,16 @@
 ---
-abbrlink: '0'
+title: IT界那些朗朗上口的“名言”
+typora-copy-images-to: ../../gitbooks/static/images/b623eeb7
+toc: true
+mathjax: true
+abbrlink: b623eeb7
+tags:
+  - English
+categories:
+  - English
+date: 2018-06-01 09:00:10
 ---
+
 互联网公司里头的名言，凝聚了很多公司价值观和做事的方法，对于很多人来说，其影响潜移默化。
 这里收集了一些，如下：
 

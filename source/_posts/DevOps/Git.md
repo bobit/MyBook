@@ -1,12 +1,12 @@
 ---
 title: Git使用方法详解
-tags:
-  - Git
-categories:
-  - Tools
 toc: true
 abbrlink: 695dd287
 typora-copy-images-to: ../../gitbooks/static/images/695dd287
+tags:
+  - Git
+categories:
+  - DevOps
 ---
 
 ## Git

@@ -1,13 +1,15 @@
 ---
 title: MQ学习总结
+toc: true
+typora-copy-images-to: ../../gitbooks/static/images/2da7d583
+mathjax: true
+abbrlink: 2da7d583
+date: 2016-11-13 11:38:35
 tags:
   - MQ
   - ActiveMQ
 categories:
-  - 分布式
-toc: true
-abbrlink: 2da7d583
-date: 2016-11-13 11:38:35
+  - DistributedSystems
 ---
 ## 简介
 

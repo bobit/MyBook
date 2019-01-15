@@ -1,12 +1,13 @@
 ---
-title: Maven学习总结
-tags: maven
-categories: 
-- Maven
+title: Maven 学习总结
 toc: true
 abbrlink: 17b0d7a3
 date: 2014-10-13 22:17:17
 typora-copy-images-to: ../../gitbooks/static/images/17b0d7a3
+tags:
+- Maven
+categories:
+- DevOps
 ---
 
 ## Maven内置变量说明

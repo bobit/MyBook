@@ -1,13 +1,13 @@
 ---
 title: FreeMind 学习总结
-tags:
-  - FreeMind
-categories:
-  - FreeMind
 toc: true
 typora-copy-images-to: ../../gitbooks/static/images/ec2088cd
 abbrlink: ec2088cd
 date: 2018-11-12 12:19:17
+tags:
+  - FreeMind
+categories:
+  - DevOps
 ---
 
 思维导图freemind的使用教程

@@ -1,14 +1,15 @@
 ---
 title: Java克隆与序列化
-tags:
-  - 克隆
-  - 序列化
-categories: 
-- 并发编程
 toc: true
+typora-copy-images-to: ../../gitbooks/static/images/
 mathjax: true
 abbrlink: 8fc1e45b
 date: 2013-11-13 22:22:17
+tags:
+  - 克隆
+  - 序列化
+categories:
+  - ConcurrentProgramming
 ---
 
 最近不止一次遇见深浅克隆（深复制，浅复制）的问题，除了印象中有个clone方法外一脸懵逼！！！

@@ -1,12 +1,12 @@
 ---
 title: Python高级
-tags:
-  - python
-categories:
-  - Python
 toc: true
 abbrlink: bce7e83e
 date: 2017-09-02 09:00:12
+tags:
+  - python
+categories:
+  - AI
 ---
 
 ## [TOC]

@@ -1,12 +1,12 @@
 ---
 title: Python基础
-tags:
-  - python
-categories:
-  - Python
 toc: true
 abbrlink: 99832f47
 date: 2017-09-01 09:00:11
+tags:
+  - python
+categories:
+  - AI
 ---
 
 ## 算术运算符

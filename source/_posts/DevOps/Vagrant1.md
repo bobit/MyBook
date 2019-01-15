@@ -1,12 +1,13 @@
 ---
-title: Vagrant学习总结
-tags: Vagrant
-categories:
-  - Vagrant
+title: Vagrant 学习总结
 toc: true
 abbrlink: 23b417a
 typora-copy-images-to: ../../gitbooks/static/images/23b417a
 date: 2018-10-13 22:17:17
+tags:
+- Vagrant
+categories:
+  - DevOps
 ---
 
 ## 

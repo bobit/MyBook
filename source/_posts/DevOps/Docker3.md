@@ -1,11 +1,12 @@
 ---
 title: MySQL 官方 Docker 镜像的使用
-tags: docker
-categories: 
-- Docker
 toc: true
 abbrlink: ac33bd8a
 date: 2017-11-12 22:20:17
+tags:
+- Docker
+categories:
+- DevOps
 ---
 
 ## 获取镜像

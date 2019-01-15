@@ -5,7 +5,9 @@ typora-copy-images-to: ../../gitbooks/static/images/7819459c
 abbrlink: 7819459c
 date: 2018-12-30 19:56:06
 tags:
+- Minikube
 categories:
+- DevOps
 ---
 
 在Windows 10 环境下搭建一个minikube单机版Kubernetes集群，下列是搭建过程中本机的实验环境：

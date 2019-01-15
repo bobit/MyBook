@@ -1,14 +1,15 @@
 ---
 title: Encache 学习总结
+toc: true
+typora-copy-images-to: ../../gitbooks/static/images/ef2531eb
+mathjax: true
+abbrlink: ef2531eb
+date: 2017-11-13 12:19:17
 tags:
   - MongoDB
   - Robo 3T
 categories:
-  - 分布式
-toc: true
-typora-copy-images-to: ../../../gitbooks/static/images/33388948
-abbrlink: ef2531eb
-date: 2017-11-13 12:19:17
+  - DistributedSystems
 ---
 
 # Ehcache

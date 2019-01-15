@@ -1,13 +1,14 @@
 ---
 title: Java常用的数据结构
-tags:
-  - Java
-categories: 
-- 并发编程
 toc: true
+typora-copy-images-to: ../../gitbooks/static/images/
 mathjax: true
 abbrlink: 8d45e6b1
 date: 2010-11-13 22:23:17
+tags:
+  - Java
+categories:
+  - ConcurrentProgramming
 ---
 
 

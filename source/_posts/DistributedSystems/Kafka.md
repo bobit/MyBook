@@ -1,14 +1,15 @@
 ---
 title: Kafka 学习总结
+toc: true
+typora-copy-images-to: ../../gitbooks/static/images/5ef7b7c0
+mathjax: true
+abbrlink: 5ef7b7c0
+date: 2017-11-13 12:19:17
 tags:
   - MongoDB
   - Robo 3T
 categories:
-  - 分布式
-toc: true
-typora-copy-images-to: ../../gitbooks/static/images/33388948
-abbrlink: 5ef7b7c0
-date: 2017-11-13 12:19:17
+  - DistributedSystems
 ---
 
 ## 参考

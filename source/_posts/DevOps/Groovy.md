@@ -1,13 +1,13 @@
 ---
 title: Groovy基础
-tags:
-  - Gradle
-categories:
-  - Tools
 toc: true
 abbrlink: b88033e6
 date: 2015-11-13 11:12:35
 typora-copy-images-to: ../../gitbooks/static/images/b88033e6
+tags:
+  - Gradle
+categories:
+  - DevOps
 ---
 
 Groovy

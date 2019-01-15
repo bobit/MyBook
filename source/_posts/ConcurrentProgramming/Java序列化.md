@@ -1,15 +1,16 @@
 ---
 title: Java序列化
+toc: true
+typora-copy-images-to: ../../gitbooks/static/images/
+mathjax: true
+abbrlink: 9cd1a944
+date: 2013-11-13 22:25:17
 tags:
   - 克隆
   - 序列化
   - Serializable
-categories: 
-- 并发编程
-toc: true
-mathjax: true
-abbrlink: 9cd1a944
-date: 2013-11-13 22:25:17
+categories:
+  - ConcurrentProgramming
 ---
 
 ## 概念

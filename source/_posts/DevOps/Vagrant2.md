@@ -1,12 +1,13 @@
 ---
 title: Vagrant创建多个虚拟机 multi-machine
-tags: Vagrant
-categories:
-  - Vagrant
 toc: true
 typora-copy-images-to: ../../gitbooks/static/images/
 abbrlink: 2433969f
 date: 2018-10-13 22:13:17
+tags:
+- Vagrant
+categories:
+  - DevOps
 ---
 
 

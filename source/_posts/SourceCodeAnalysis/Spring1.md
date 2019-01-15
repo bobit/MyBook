@@ -7,7 +7,7 @@ tags:
   - Spring
   - Spring5
 categories:
-  - Source
+  - SourceCodeAnalysis
 ---
 
 ## 为什么要阅读源码
@@ -65,4 +65,34 @@ Web 模块还简化了处理多部分请求以及将请求参数绑定到域对�
 MVC框架是一个全功能的构建Web应用程序的MVC实现。通过策略接口，MVC框架变成为高度可配置的。Spring的MVC框架提供清晰的角色划分：控制器、验证器、命令对象、表单对象和模型对象、分发器、处理器映射和视图解析器。Spring支持多种视图技术，其中包括 JSP、Velocity、Tiles、iText 和 POI。
 
 ## Spring运用的设计模式
+
+## Spring提供的内置事务管理器实现
+
+### JDBC DataSource事物管理器：
+org.springframework.jdbc.datasource.DataSourceTransactionManager
+DataSourceTransactionManager：位于org.springframework.jdbc.datasource包中，数据源事务管理器，提供对单个javax.sql.DataSource事务管理，用于Spring JDBC抽象框架、iBATIS或MyBatis框架的事务管理；
+### Hibernate的事务管理器：
+org.springframework.orm.hibernate.HibernateTransactionManager
+HibernateTransactionManager：位于org.springframework.orm.hibernate3包中，提供对单个org.hibernate.SessionFactory事务支持，用于集成Hibernate框架时的事务管理；该事务管理器只支持Hibernate3+版本，且Spring3.0+版本只支持Hibernate 3.2+版本；
+### JDO的事务管理器：
+org.springframework.orm.jdo.JdoTransactionManager
+JdoTransactionManager：位于org.springframework.orm.jdo包中，提供对单个javax.jdo.PersistenceManagerFactory事务管理，用于集成JDO框架时的事务管理；
+### JTA事务管理器：
+org.springframework.transaction.jta.JtaTransactionManager
+JtaTransactionManager：位于org.springframework.transaction.jta包中，提供对分布式事务管理的支持，并将事务管理委托给Java EE应用服务器事务管理器；
+### OJB事务管理器：
+org.springframework.orm.ojb.PersistenceBrokerTransactionManager
+
+### JpaTransactionManager
+JpaTransactionManager：位于org.springframework.orm.jpa包中，提供对单个javax.persistence.EntityManagerFactory事务支持，用于集成JPA实现框架时的事务管理；
+### OC4JjtaTransactionManager
+OC4JjtaTransactionManager：位于org.springframework.transaction.jta包中，Spring提供的对OC4J10.1.3+应用服务器事务管理器的适配器，此适配器用于对应用服务器提供的高级事务的支持；
+### WebSphereUowTransactionManager
+WebSphereUowTransactionManager：位于org.springframework.transaction.jta包中，Spring提供的对WebSphere 6.0+应用服务器事务管理器的适配器，此适配器用于对应用服务器提供的高级事务的支持；
+### WebLogicJtaTransactionManager
+WebLogicJtaTransactionManager：位于org.springframework.transaction.jta包中，Spring提供的对WebLogic 8.1+应用服务器事务管理器的适配器，此适配器用于对应用服务器提供的高级事务的支持。
+
+Spring不仅提供这些事务管理器，还提供对如JMS事务管理的管理器等，Spring提供一致的事务抽象如图1所示。
+
+
 

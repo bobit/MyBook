@@ -1,13 +1,13 @@
 ---
 title: Docker 学习总结
-tags:
-  - Docker
-categories:
-  - 分布式
 toc: true
 abbrlink: 3bbcec42
 date: 2017-11-12 12:19:17
 typora-copy-images-to: ../../gitbooks/static/images/3bbcec42
+tags:
+  - Docker
+categories:
+  - DevOps
 ---
 
 

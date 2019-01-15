@@ -5,7 +5,9 @@ typora-copy-images-to: ../../gitbooks/static/images/917ae0a9
 abbrlink: 917ae0a9
 date: 2018-12-30 19:56:44
 tags:
+- Minikube
 categories:
+- DevOps
 ---
 
 ### 阿里云安装参考：

@@ -9,7 +9,7 @@ tags:
   - Anaconda
   - python
 categories:
-  - Python
+  - AI
 
 ---
 

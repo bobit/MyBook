@@ -1,13 +1,13 @@
 ---
 title: MySQL数据库性能优化总结
+toc: true
+abbrlink: 56ddf855
+date: 2015-11-13 12:19:35
 tags:
   - 数据库
   - 性能优化
 categories:
-  - 性能优化
-toc: true
-abbrlink: 56ddf855
-date: 2015-11-13 12:19:35
+  - PerformanceOptimization
 ---
 
 ## 模型的设计
