@@ -32,3 +32,10 @@ Mybatis虽然不像Hibernate那样是完全围绕对象的，但是Mybatis在Jav
 
 ## 区别
 
+
+
+
+
+## 参考
+
+[【持久化框架】Mybatis简介与原理](https://blog.csdn.net/jiuqiyuliang/article/details/45286191)

@@ -4,7 +4,7 @@ toc: true
 typora-copy-images-to: ../../gitbooks/static/images/
 mathjax: true
 abbrlink: 8fc1e45b
-date: 2013-11-13 22:22:17
+date: 2018-11-13 22:22:17
 tags:
   - 克隆
   - 序列化
@@ -56,3 +56,11 @@ categories:
 
 ## DEMO
 
+
+
+## 参考
+
+[Java对象的序列化与反序列化](http://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650120836&idx=1&sn=c83a980c0871faf607ae613092c69760&chksm=f36bbfa5c41c36b317c103f27b9d99c26aecba52e4bf614bd73dcadc1e4bc5ab8f99fb082eba&scene=21#wechat_redirect)
+[深入分析Java的序列化与反序列化](http://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650120882&idx=1&sn=8e355b5ee3cce0a2d0108edbdf88e606&chksm=f36bbf93c41c3685340d4f658dddec6bcbd5903b5d92875bb06d51a0dfc49ee7326417a0edff&scene=21#wechat_redirect)
+[单例与序列化的那些事儿](http://mp.weixin.qq.com/s?__biz=MzI3NzE0NjcwMg==&mid=2650120643&idx=1&sn=72ffc1018f5fe4451f885be56e972b30&chksm=f36bbce2c41c35f4d18a841b6fcc5688e7ab3d520be46bc72825b16c0d507a31e48f77dcf0fa&scene=21#wechat_redirect)
+[为什么阿里巴巴要求程序员谨慎修改serialVersionUID 字段的值](https://mp.weixin.qq.com/s/5xcDDtsVYdgzUebF3_Mg4g)

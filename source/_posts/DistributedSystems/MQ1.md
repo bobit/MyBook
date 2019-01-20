@@ -341,3 +341,8 @@ Broker-Cluster部署方式中，各个broker通过网络互相连接，并共享
        </persistenceAdapter>
 ```
 9）分别启动broker-A、broker-B、broker-C，因为是broker-B先启动，所以“/localhost/kahadb”目录被lock住，broker-C将一直处于挂起状态，当人为停掉broker-B之后，broker-C将获取目录“/localhost/kahadb”的控制权，重新与broker-A组成cluster提供服务。
+
+## 参考
+
+[新手也能看懂，消息队列其实很简单](https://mp.weixin.qq.com/s/MRHswsKoL0sm8ppd_gpF5Q)
+
