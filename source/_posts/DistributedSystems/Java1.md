@@ -8,7 +8,7 @@ tags:
   - Java
 categories:
   - DistributedSystems
-date: 2019-01-15 13:40:06
+date: 2019-01-13 13:40:06
 ---
 
 Java持久层的三种查询方式 一、本地SQL查询 二、JPQL查询 三、Criteria API

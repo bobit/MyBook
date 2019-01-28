@@ -1,16 +1,20 @@
 ---
-title: Kafka 学习总结
+title: MQ学习-KafKa
 toc: true
-typora-copy-images-to: ../../gitbooks/static/images/5ef7b7c0
+typora-copy-images-to: ../../gitbooks/static/images/
 mathjax: true
-abbrlink: 5ef7b7c0
-date: 2017-11-13 12:19:17
+abbrlink: 265cb8f9
 tags:
-  - MongoDB
-  - Robo 3T
+  - MQ
+  - ActiveMQ
 categories:
   - DistributedSystems
+date: 2016-11-18 11:38:35
 ---
+
+
+
+
 
 ## 参考
 

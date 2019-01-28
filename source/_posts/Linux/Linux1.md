@@ -32,7 +32,31 @@ docker logs -f -t --since="2017-05-31" --tail=10 web_1
 
 web_1 : 容器名称
 
+## 磁盘
 
+**du-查看文件夹大小-并按大小进行排序**
+
+**查看当前磁盘使用情况**
+
+df -h
+
+**查看文件夹大小**
+
+du -sh
+
+ -s, --summarize display only a total for each argument， -s这个参数的作用就是仅显示总计，即当前文件夹的大小。
+
+**按深度查看文件夹大小**（无s）
+
+ du -h --max-depth=1
+
+**按照从大到小的方式排序**
+
+du-s * | ``sort` `-nr  `
+
+du -s * | sort -nr | head 选出排在前面的10个，
+
+du -s * | sort -nr | tail 选出排在后面的10个。
 
 ## vi 和vim 的区别
 

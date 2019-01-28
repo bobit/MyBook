@@ -1,9 +1,9 @@
 ---
-title: 目前 Java 后端有哪些不是很有必要去学的？
+title: 目前Java后端必学内容
 typora-copy-images-to: ../../gitbooks/static/images/
 toc: true
 mathjax: true
-abbrlink: 
+abbrlink: b11731b
 date: 2019-01-17 01:35:50
 tags:
 categories:
@@ -19,7 +19,6 @@ categories:
 
 - Servlet（要精通）
 
-学习spring boot的一套工具链。Java自己如果不变革，不走向敏捷与自动化配置这条路，只靠吃老本的话，迟早会被淘汰。
 - Spring MVC 
 - MyBatis
 
