@@ -119,3 +119,15 @@ qiniu:
     folder: js
   css:
     folder: css
+    
+douban:
+  user: 84956757
+  builtin: true
+  book:
+    title: 'This is my book title'
+    quote: 'This is my book quote'
+  movie:
+    title: 'This is my movie title'
+    quote: 'This is my movie quote'
+    
+  timeout: 10000 

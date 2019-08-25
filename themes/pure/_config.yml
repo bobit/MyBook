@@ -1,13 +1,14 @@
 # menu
 menu:
-  Home: .
-  Archives: archives  # 归档
-  Categories: categories  # 分类
-  Tags: tags  # 标签
-  Repository: repository  # github repositories
-  Books: books  # 豆瓣书单
-  # Links: links  # 友链
-  About: about  # 关于
+  Home: /
+  Archives: /archives  # 归档
+  Categories: /categories  # 分类
+  Tags: /tags  # 标签
+  Repository: /repository  # github repositories
+  Books: /books     #This is your books page 
+  Movies: /movies   #This is your movies page 
+  # Links: /links  # 友链
+  About: /about  # 关于
 
 # Enable/Disable menu icons
 menu_icons:
@@ -18,6 +19,7 @@ menu_icons:
   tags: icon-tags
   repository: icon-project
   books: icon-book-fill
+  movies: icon-book-fill
   links: icon-friendship
   about: icon-cup-fill
 
@@ -148,10 +150,10 @@ comment:
   # https://api.douban.com/v2/movie/coming_soon 即将上映的电影
   # https://api.douban.com/v2/movie/subject/:id 单个电影信息
   # https://api.douban.com/v2/movie/search?q={text} 电影搜索
-douban:
-  user: 84956757 # 豆瓣用户名
-  start: 0 # 从哪一条记录开始
-  count: 100 # 获取豆瓣书单数据条数
+# douban:
+  # user: 84956757 # 豆瓣用户名
+  # start: 0 # 从哪一条记录开始
+  # count: 100 # 获取豆瓣书单数据条数
   
 # PV
 pv:
