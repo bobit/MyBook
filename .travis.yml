@@ -4,7 +4,10 @@ language: node_js
 sudo: required
 # 指定node_js版本
 node_js:
-  stable
+  - 8
+  - 10
+  - 12
+#  stable
 #- 7.9.0
 # 指定缓存模块，可选。缓存可加快编译速度。
 cache:
