@@ -17,7 +17,7 @@ cache:
 # 指定博客的仓库地址
 env:
   global:
-  - GH_REF: github.com/bobit/bobit.github.io
+  - GH_REF: github.com/bobit/bobit.github.io.git
 
 # 指定博客分支
 branches:
