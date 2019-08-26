@@ -107,7 +107,9 @@ qiniu:
   offline: false
   sync: true
   bucket: bobit-image
-  secret_file: E:\Users\zhangb\Documents\Keys\secret_file
+  access_key: cjiCl-Rzv-ucCrnhhXxiNTx3lkRQ6kvN2yy4aqvt
+  secret_key: 6P-r5vB7GjvLUpvIRVihS379bBvKmRsE1-NHw6j0
+  #secret_file: E:\Users\zhangb\Documents\Keys\secret_file
   dirPrefix: static
   urlPrefix: pkaakvn6o.bkt.clouddn.com/static
   local_dir: source/gitbooks/static
