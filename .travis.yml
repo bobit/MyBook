@@ -1,7 +1,8 @@
-# 指定了执行脚本的分支。
+# 指定执行脚本的分支
 branches:
   only:
-  - master
+  - gh-pages
+# - master
 # - maintenance
 # 指定语言环境
 language: node_js
