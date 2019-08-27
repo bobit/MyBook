@@ -43,7 +43,7 @@ script:
 #travis-ci生成静态文件，并将public目录下的文件全部 push 到你所指定仓库的 master 分支上去。
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
-- cd ./public
+- cd ./maintenance
 - git init
 - git add .
 - echo "zhangbo.fun" > CNAME
