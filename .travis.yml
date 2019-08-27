@@ -1,8 +1,8 @@
 # 指定了执行脚本的分支。
 branches:
   only:
-  #  - master
-  - maintenance
+  - master
+# - maintenance
 # 指定语言环境
 language: node_js
 # 指定需要sudo权限
