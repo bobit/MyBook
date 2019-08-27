@@ -1,12 +1,17 @@
+# 指定了执行脚本的分支。
+branches:
+  only:
+  #  - master
+  - maintenance
 # 指定语言环境
 language: node_js
 # 指定需要sudo权限
 sudo: required
 # 指定node_js版本
-node_js:
+node_js: stable
 #  - 8
 #  - 10
-  - 12
+#  - 12
 #  stable
 #- 7.9.0
 # 指定缓存模块，可选。缓存可加快编译速度。
@@ -19,11 +24,6 @@ env:
   global:
   - GH_REF: github.com/bobit/bobit.github.io.git
 
-# 指定博客分支
-branches:
-  only:
-#  - master
-  - maintenance
 before_install:
 - npm install -g hexo-cli
 
@@ -32,19 +32,21 @@ install:
 - npm install
 - npm install hexo-deployer-git --save
 - npm install hexo-douban --save
-
+before_script:
+- git config user.name "bobit"
+- git config user.email "iloveapi@163.com"
 # 执行清缓存，生成网页操作
 script:
 - hexo clean
 - hexo generate
 
+#travis-ci生成静态文件，并将public目录下的文件全部 push 到你所指定仓库的 master 分支上去。
 # 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
 - cd ./public
 - git init
-- git config user.name "bobit"
-- git config user.email "iloveapi@163.com"
 - git add .
+- echo "zhangbo.fun" > CNAME
 - git commit -m "Update docs"
 - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
