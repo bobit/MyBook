@@ -78,10 +78,10 @@ theme: pure
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository: https://github.com/bobit/bobit.github.io
-  branch: master
+#deploy:
+#  type: git
+#  repository: https://github.com/bobit/bobit.github.io
+#  branch: source
 
 # abbrlink config
 abbrlink:
