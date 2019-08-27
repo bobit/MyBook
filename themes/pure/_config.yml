@@ -62,7 +62,7 @@ sidebar: right
 widgets:
   - board  
   - category
-  - tag
+#  - tag
   - tagcloud
   - archive
   - recent_posts
