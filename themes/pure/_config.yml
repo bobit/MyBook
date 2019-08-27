@@ -5,7 +5,7 @@ menu:
   Categories: /categories  # 分类
   Tags: /tags  # 标签
   Repository: /repository  # github repositories
-  Books: /books     #This is your books page 
+  Books: /books     #This is your books page
   Movies: /movies   #This is your movies page
   Demos: /demos
   # Links: /links  # 友链
@@ -21,7 +21,8 @@ menu_icons:
   repository: icon-project
   books: icon-book-fill
   movies: icon-book-fill
-  links: icon-friendship
+  demos: icon-book-fill
+  #links: icon-friendship
   about: icon-cup-fill
 
 # rss
