@@ -7,10 +7,14 @@ abbrlink: b1a2c01
 date: 2019-08-28 11:25:30
 tags:
 categories:
-
 ---
 
 ## 自动化部署
+### SpringBoot applications using Travis-CI
+
+### Vue applications using Travis-CI
+
+### python  applications using Travis-CI
 
 
 ## 参考
