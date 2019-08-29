@@ -7,7 +7,7 @@ menu:
   Repository: /repository  # github repositories
   Books: /books     #This is your books page
   Movies: /movies   #This is your movies page
-  Demos: /demos
+  Demos: /demo
   # Links: /links  # 友链
   About: /about  # 关于
 
