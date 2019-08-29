@@ -1,5 +1,5 @@
 ---
-title: TravisÏµÁĞ:×Ô¶¯»¯²¿ÊğÏîÄ¿
+title: Travisç³»åˆ—:è‡ªåŠ¨åŒ–éƒ¨ç½²é¡¹ç›®
 typora-copy-images-to: ../../gitbooks/static/images/b1a2c01
 toc: true
 mathjax: true
@@ -7,9 +7,14 @@ abbrlink: b1a2c01
 date: 2019-08-28 11:25:30
 tags:
 categories:
+
 ---
 
+## è‡ªåŠ¨åŒ–éƒ¨ç½²
 
-## ×Ô¶¯»¯²¿Êğ
 
-## 
+## å‚è€ƒ
+
+https://docs.travis-ci.com/user/tutorial/
+
+https://docs.travis-ci.com/user/sonarcloud/
