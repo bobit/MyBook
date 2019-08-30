@@ -1,8 +1,16 @@
-*Thumbs.db
-.bundle
-.sass-cache
-Gemfile.lock
-_site
-*.gem
-*.bak
-node_modules
+### gitbooks ###
+source/gitbooks/_book
+source/gitbooks/_posts
+source/gitbooks/*.pdf
+
+*.iml
+.idea
+
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+.deploy_git/

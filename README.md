@@ -1,54 +1,54 @@
-Jekyll Xixia
-============
+## 简介
 
-* Get it from [github](https://github.com/zxixia/jekyll-xixia).
-* See the [live demo](http://zxixia.github.io/jekyll-xixia/).
-* See it [in action on my own blog](http://xixia.info/).
+采用Hexo框架，使用 [Markdown](http://daringfireball.net/projects/markdown/)（或其他渲染引擎）解析文章，生成静态网页，给自己的学习和生活做个记录。
 
-A simple and clean Jekyll theme using [bootstrap](http://getbootstrap.com)
-(not to be confused with jekyll-bootstrap) that's easy to modify and very
-modular in component and element reuse.
 
-The theme works well on mobile phones, using a collapsable nav bar and hiding the
-sidebar. The links pane in the sidebar is available on mobile through the nav menu,
-and you can do the same thing for any other sections added to the sidebar.
 
-Don't forget to occassionally merge against my upstream repository so you can get
-the latest changes. Pull requests are encouraged and accepted!
+## 配置
 
-Preview
-=======
-![Xixia](/assets/images/preview.png)
+### 更换主题
 
-License
-=======
+hexo自己默认的主题landscape，个人推荐主题yilia
+$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
 
-The content of this theme is distributed and licensed under a
-![License Badge](assets/images/cc_by_88x31.png)
-[Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode)
+修改配置文件
+修改Blog/_config.yml文件：
+theme: yilia    //默认为landscape
 
-    This license lets others distribute, remix, tweak, and build upon your work,
-    even commercially, as long as they credit you for the original creation. This
-    is the most accommodating of licenses offered. Recommended for maximum
-    dissemination and use of licensed materials.
+### 部署到github
 
-In other words: you can do anything you want with this theme on any site, just please
-provide a link to [the original theme on github](https://github.com/zxixia/jekyll-xixia)
-so I get credit for the original design. Beyond that, have at it!
+部署之前先修改Blog/_config.yml文件。
 
-Thanks
-======
+deploy:
+​    type: git
+​    repository: https://github.com/bobit/bobit.github.io  //bobit替换为你自己的用户名
+​    branch: master
 
-1，[Jekyll][jekyll-url]
+然后使用以下命令进行部署。
 
-2，[Bootstrap][bootstrap-url]
+```
+hexo clean
+hexo generate 或者 hexo g
+hexo deploy
+```
 
-3，[Github][github-url]
+备注：如果执行上述命令报错，你可以试试下面这个命令再试。
+$ npm install hexo-deployer-git --save
 
-4，[Jekyll Clean Theme][Jekyll-Clean-Theme-url]
+## 运行
 
-[jekyll-url]: http://jekyllrb.com/
-[bootstrap-url]: http://getbootstrap.com/
-[github-url]: https://github.com/
-[Jekyll-Clean-Theme-url]: https://github.com/scotte/jekyll-clean
-[xixia-url]: http://xixia.info/
+本地启动 $ hexo server 或者hexo s
+本地启动服务，在浏览器中输入http://localhost:4000/查看生成的页面效果。
+恭喜你，到此你成功了！
+
+## 自动化部署
+
+travis-ci生成静态文件，并将public目录下的文件全部 push 到所指定仓库的 master 分支。
+
+[https://docs.travis-ci.com/](https://docs.travis-ci.com/)
+
+
+
+## 参考
+
+[https://hexo.io/zh-cn/docs/](https://hexo.io/zh-cn/docs/)
