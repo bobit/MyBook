@@ -810,7 +810,7 @@
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
 
-"@vuepress/core@^1.0.0-rc.1":
+"@vuepress/core@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/@vuepress/core/download/@vuepress/core-1.1.0.tgz#32fd2b65a4613085cbd2b812bf67afe3a037dc65"
   integrity sha1-Mv0rZaRhMIXL0rgSv2ev46A33GU=
@@ -930,7 +930,7 @@
     semver "^6.0.0"
     upath "^1.1.0"
 
-"@vuepress/theme-default@^1.0.0-rc.1":
+"@vuepress/theme-default@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/@vuepress/theme-default/download/@vuepress/theme-default-1.1.0.tgz#915c97bb69985d6fccd815f829532d67d828e10a"
   integrity sha1-kVyXu2mYXW/M2BX4KVMtZ9go4Qo=
@@ -5024,6 +5024,11 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+opencollective-postinstall@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/opencollective-postinstall/download/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
+  integrity sha1-Vlfxvt5ptuM6RZObBh61PTxsOok=
+
 opn@^5.5.0:
   version "5.5.0"
   resolved "https://registry.npm.taobao.org/opn/download/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
@@ -7224,15 +7229,16 @@ vuepress-plugin-yuque@^0.6.0:
     node-fetch "^2.3.0"
     ora "^3.0.0"
 
-vuepress@^1.0.0-rc.1:
-  version "1.0.0-rc.1"
-  resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.0.0-rc.1.tgz#f57fb35c4bac3e1b1438a53335acce0890a3f5f4"
-  integrity sha1-9X+zXEusPhsUOKUzNazOCJCj9fQ=
+vuepress@^1.0.4:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/vuepress/download/vuepress-1.1.0.tgz#ca0d787d93188b2fd05820a650d7e3643c9e7675"
+  integrity sha1-yg14fZMYiy/QWCCmUNfjZDyednU=
   dependencies:
-    "@vuepress/core" "^1.0.0-rc.1"
-    "@vuepress/theme-default" "^1.0.0-rc.1"
+    "@vuepress/core" "^1.1.0"
+    "@vuepress/theme-default" "^1.1.0"
     cac "^6.3.9"
     envinfo "^7.2.0"
+    opencollective-postinstall "^2.0.2"
 
 watchpack@^1.6.0:
   version "1.6.0"
